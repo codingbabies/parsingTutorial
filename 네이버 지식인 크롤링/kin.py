@@ -59,7 +59,7 @@ def process(sel_dir):
                     print("num:", len(val))
 
 
-if __name__ == "__main__":
+def run():
     while True:
         print("[ 다음 카테고리중 선택해주세요. (종료하려면 Q를 눌러주세요.)]")
         pprint(list(directory.keys()))
@@ -73,3 +73,6 @@ if __name__ == "__main__":
             continue
 
         process(selected_dir)
+
+if __name__ == "__main__":
+    run()
